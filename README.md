@@ -13,7 +13,7 @@ Structure
 
 Installation
     1. Clone this repository:
-       git clone https://github.com/lilalaser/R-for-Linguists
+       git clone https://github.com/lilalaser/R-Visualizations
     2. Open the R script in RStudio or another R environment.
 Usage
     1. Load the Data:
