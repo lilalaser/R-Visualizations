@@ -1,14 +1,3 @@
-#The dataset from Cheung et al. (2017) (https://osf.io/u2wsz/) includes information 
-#on Cantonese-speaking children’s understanding of presuppositions triggered by 
-#various grammatical configurations. 
-#These configurations include factive presuppositions, existential presuppositions, 
-#and those arising from lexical and structural factors. The dataset records several 
-#variables, such as the children's age in months, sex, and whether they have been 
-#diagnosed with Autism Spectrum Disorder. The dependent variable is the accuracy of 
-#their responses to presupposition comprehension tests for each individual test item.
-
-#Aim: create visualizations for various relationships in the data
-
 ```{r} 
 # Install the necessary packages
 install.packages("dplyr")
