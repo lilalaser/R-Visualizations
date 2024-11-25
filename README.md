@@ -11,10 +11,12 @@ Structure
 
 4. A visualization of the relationship between age and correct response rate, broken down by presupposition type including all types.
 
+
 Installation
     1. Clone this repository:
        git clone https://github.com/lilalaser/R-Visualizations
     2. Open the R script in RStudio or another R environment.
+
 Usage
     1. Load the Data:
         ◦ Run the script and use file.choose() to select the dataset .csv file when prompted.
@@ -25,5 +27,7 @@ Usage
             ▪ Section 2: Scatter plot of age vs. response rate, separated by existential and factive presupposition types.
             ▪ Section 3: Scatter plot of age vs. response rate by assigned sex for typically developing children.
             ▪ Section 4: Scatter plot of age vs. response rate across all presupposition types.
+
+
 Contact
 For questions or contributions, please contact me through github. Thank you and enjoy ;)
