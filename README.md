@@ -41,8 +41,10 @@ The dataset contains the following columns:
 - A visualization of the relationship between age and correct response rate, broken down by presupposition type including all types.
 
 3.3 Key Findings
-
-
+- Typically developing children show higher and increasing correct response rates with age
+- Children with ASD have lower and more stable response rates across ages.
+- Existential presuppositions show the highest correct response rates, followed by factive, lexical, and structural types.
+- Across all types, response rates increase with age up to around 140 months, then slightly decline.
 
 
 4. Installation/Usage
