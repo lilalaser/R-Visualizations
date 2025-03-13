@@ -8,9 +8,9 @@ library(dplyr)
 library(ggplot2)
 library(languageR)
 #read and get summary of the .csv
-pro1 <- read.csv(file.choose(), header = TRUE)
-names(pro1)
-summary(pro1)
+data <- read.csv(file.choose(), header = TRUE)
+names(data)
+summary(data)
 
 #1. Visualization of the relationship between a child's age in months and her or his
 #average correct response rate, broken down by children with and
@@ -18,7 +18,7 @@ summary(pro1)
 
 
 # Calculate the mean of 'Correct' for each 'Subject'
-pro1 %>% 
+data %>% 
   group_by(Subject)  %>%
   mutate(mean(Correct))-> mean.corr
 head(mean.corr)
@@ -43,7 +43,7 @@ mean.corr %>% ggplot( aes(x = Age_Month, y = `mean(Correct)` , color = Group)) +
 
 # Filter dataset to include only Existential and Factive presupposition types,
 # group  data by presupposition type and subject and calculate the mean of Correct
-pro1 %>% 
+data %>% 
   filter(Types == "Existential" | Types == "Factive")  %>%
   group_by(Types, Subject)  %>%
   mutate(mean(Correct)) -> mean.corr.2
@@ -63,7 +63,7 @@ mean.corr.2 %>% ggplot(aes(x = Age_Month, y = `mean(Correct)` , color = Types, s
 #create mean.corr.3 containing the mean of the Correct variable for each combination of Sex and Age_Month groups
 
 ```{r} 
-  pro1 %>% 
+ data %>% 
     filter(Group == "Typically developing children")  %>% 
     group_by(Sex, Age_Month)  %>%  
       mutate(mean.corr.3 = mean(Correct)) %>% 
@@ -83,7 +83,7 @@ mean.corr.2 %>% ggplot(aes(x = Age_Month, y = `mean(Correct)` , color = Types, s
 #calculate mean of Correct for each combination of "Age_Month" and "Types"
 #result stored in mean.corr4
 ```{r} 
-   pro1 %>%
+   data %>%
      group_by(Age_Month, Types)%>%
      summarise(mean_corr = mean(Correct)) -> mean.corr4
 #create scatter plot   
@@ -91,5 +91,5 @@ mean.corr.2 %>% ggplot(aes(x = Age_Month, y = `mean(Correct)` , color = Types, s
    
 #This plot shows that stimuli of the existential type have the highest correct response rate, followed by those of the
 #factive, lexical and structural type. For all types, the correct response rate increases until 
-# the age of 140 month and then decreases again. 
+# the age of 140 months and then decreases again. 
    
