@@ -30,7 +30,9 @@ The dataset contains the following columns:
 3. Analysis
 
 3.1 Tools used in the Analysis
-- RStudio 
+- R
+- Packages: dplyr, ggplot2, languageR
+
 
 
 3.2 Structure of the Analysis
